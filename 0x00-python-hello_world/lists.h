@@ -5,7 +5,7 @@
 
 /**
  * struct listint_s - the singly linked list
- * @n: the integer
+ * @p: the integer
  * @next: next node will be pointed 
  *
  * Description: the singly linked list node of structure
