@@ -1,17 +1,17 @@
 =============================
-A ``4-print_square`` module
+The ``4-print_square`` module
 =============================
 
-Using the ``print_square``
+Using ``print_square``
 ---------------------
 
-Import function:
+Import the function:
 
     >>> print_square = __import__('4-print_square').print_square
 
-Now test for it:
+Now test it:
 
-the correct cases
+correct cases
 
     >>> print_square(2)
     ##
@@ -38,7 +38,7 @@ the correct cases
 
     >>> print_square(0)
 
-the error cases
+error cases
 
     >>> print_square()
     Traceback (most recent call last):

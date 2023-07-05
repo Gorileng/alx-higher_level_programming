@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-A module of Matrix_divided
+Module Matrix_divided
 Divided matrix
 """
 
 
 def matrix_divided(matrix, div):
-    """It returns the matrix
-    of the result of divided matrix
+    """Returns a matrix
+    of results of a divided matrix
     """
     if type(matrix) != list or len(matrix) == 0 or matrix[0] is None:
         raise TypeError("Matrix must be a matrix (list of lists) of \
@@ -31,9 +31,3 @@ integers/floats")
     if type(div) != int and type(div) != float:
         raise TypeError("div must be a number")
 
-    if div == 0:
-        raise ZeroDivisionError("division by zero")
-
-    nm = [[round(x / div, 2) for x in r] for r in matrix]
-
-    return nm

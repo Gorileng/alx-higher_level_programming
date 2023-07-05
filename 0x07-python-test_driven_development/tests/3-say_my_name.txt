@@ -1,38 +1,37 @@
 =============================
-A ``3-say_my_name`` module
+The ``3-say_my_name`` module
 =============================
 
-Using the ``say_my_name``
+Using ``say_my_name``
 ---------------------
 
-Import function:
+Import the function:
 
     >>> say_my_name = __import__('3-say_my_name').say_my_name
 
-Now test for it:
+Now test it:
 
-the correct cases
+correct cases
 
+    >>> say_my_name("Wuhibe")
+    My name is Wuhibe 
 
-    >>> say_my_name("Keneilwe")
-    My name is Keneilwe
+    >>> say_my_name("Wuhibe", "Tamire")
+    My name is Wuhibe Tamire
 
-    >>> say_my_name("Keneilwe", "Moremedi")
-    My name is Keneilwe Moremedi
-
-    >>> say_my_name("", "Moremedi")
-    My name is  Moremedi
+    >>> say_my_name("", "Tamire")
+    My name is  Tamire
 
     >>> say_my_name("", "")
     My name is  
 
-the error cases
+error cases
 
-    >>> say_my_name(22, "Moremedi")
+    >>> say_my_name(22, "Tamire")
     Traceback (most recent call last):
     TypeError: First_name must be a string
 
-    >>> say_my_name("Keneilwe", None)
+    >>> say_my_name("Wuhibe", None)
     Traceback (most recent call last):
     TypeError: Last_name must be a string
 

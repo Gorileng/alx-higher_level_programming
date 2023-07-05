@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-the module text_indentation
+Module text_indentation
 text_indentation
 """
 
 
 def text_indentation(text):
     """
-       Print the indent text
+       Prints indent text
     """
     if type(text) != str or text is None or len(text) < 0:
         raise TypeError("text must be a string")

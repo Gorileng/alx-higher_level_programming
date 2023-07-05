@@ -1,17 +1,17 @@
 =============================
-A ``0-add_integer`` module
+The ``0-add_integer`` module
 =============================
 
-Using the ``add_integer``
+Using ``add_integer``
 ---------------------
 
 Import the function:
 
     >>> add_integer = __import__('0-add_integer').add_integer
 
-Now for test it:
+Now test it:
 
-Test for the Positive Numbers.
+Tests for Positive Numbers.
 
     >>> add_integer(2, 7)
     9
@@ -28,7 +28,7 @@ Test for the Positive Numbers.
     >>> add_integer(2, 1)
     3
 
-Test for the Negative Numbers.
+Tests for Negative Numbers.
 
     >>> add_integer(-2, -7)
     -9
@@ -45,7 +45,7 @@ Test for the Negative Numbers.
     >>> add_integer(-2, -1)
     -3
 
-Test for the positive Floats.
+Tests for positive Floats.
 
     >>> add_integer(2.1, 7.2)
     9
@@ -62,7 +62,7 @@ Test for the positive Floats.
     >>> add_integer(2.3, 1.1)
     3
 
-Test for the Negative Floats.
+Tests for Negative Floats.
 
     >>> add_integer(-2.3, -7.1)
     -9
@@ -79,7 +79,7 @@ Test for the Negative Floats.
     >>> add_integer(-2.7, -1.2)
     -3
 
-Tests one Argument.
+Test just one Argument.
 
     >>> add_integer(1)
     99
@@ -96,7 +96,7 @@ Tests one Argument.
     >>> add_integer(5)
     103
 
-tests for the Error Cases.
+test Error Cases.
 
     >>> add_integer(True, False)
     Traceback (most recent call last):

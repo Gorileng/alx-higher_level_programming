@@ -1,18 +1,18 @@
 =============================
-A ``2-matrix_divided`` module
+The ``2-matrix_divided`` module
 =============================
 
-Using the ``matrix_divided``
+Using ``matrix_divided``
 ---------------------
 
-Import function:
+Import the function:
 
     >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
-Now test for it:
+Now test it:
 
 
-correct the cases
+correct cases
 
     >>> matrix_divided([[2, 4, 6], [4, 6, 8]], 2)
     [[1.0, 2.0, 3.0], [2.0, 3.0, 4.0]]
@@ -27,7 +27,7 @@ correct the cases
     >>> matrix_divided(matrix, 3)
     [[0.33, 0.67, 1.0]]
 
-the error cases
+error cases
 
     >>> matrix_divided()
     Traceback (most recent call last):

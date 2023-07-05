@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""the uittest for max_integer([..])
+"""Unittest for max_integer([..])
 """
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
 class TestMaxInteger(unittest.TestCase):
-    """test for the integers"""
+    """Test for integers"""
 
     def test_max_integer(self):
-        """the cases"""
+        """Cases"""
         self.assertEqual(max_integer([6, 7, 9]), 9)
         self.assertEqual(max_integer([13, -2, -1, -9]), 13)
         self.assertEqual(max_integer([11, 22, -9]), 22)

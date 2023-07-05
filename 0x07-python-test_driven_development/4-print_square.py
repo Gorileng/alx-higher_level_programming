@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-the module print_square
+Module print_square
 print_square
 """
 
 
 def print_square(size):
     """
-    Prints the square
+    Print a square
     """
     if type(size) != int:
         raise TypeError('size must be an integer')

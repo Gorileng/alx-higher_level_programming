@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-the module say_my_name
+Module say_my_name
 say_my_name
 """
 
 
 def say_my_name(first_name, last_name=""):
     """
-    Prints the Full Name for a person.
+    Print Full Nname for a person.
     """
     if type(first_name) != str:
         raise TypeError('First_name must be a string')
