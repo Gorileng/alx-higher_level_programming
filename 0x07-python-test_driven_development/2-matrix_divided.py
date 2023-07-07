@@ -5,7 +5,7 @@
 
 
 def matrix_divided(matrix, div):
-    """Divides every the elements of the matrix.
+    """Divides every element of the matrix.
 
     Args:
         matrix (list): list of lists of ints or floats.
