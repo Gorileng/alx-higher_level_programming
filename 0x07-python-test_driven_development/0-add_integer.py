@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-Module add-integer
-add two integers
+Module for add-integer
+add two of integers
 """
 
 
 def add_integer(a, b=98):
-    """ This function return the sum of intgers
-    or the int cast of floats
+    """ This function will return sum of the integers
+    or int cast of the floats
     """
 
     if type(a) != int and type(a) != float:
