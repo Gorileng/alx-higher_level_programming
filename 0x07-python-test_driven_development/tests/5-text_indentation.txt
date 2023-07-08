@@ -1,17 +1,17 @@
 =============================
-The ``5-text_indentation`` module
+A ``5-text_indentation`` module
 =============================
 
-Using ``text_indentation``
+Using a ``text_indentation``
 ---------------------
 
-Import the function:
+Import function:
 
     >>> text_indentation = __import__('5-text_indentation').text_indentation
 
-Now test it:
+Now test for it:
 
-correct cases
+the correct cases
     >>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
     ... Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? \
     ... Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed ubi illud: \
@@ -78,7 +78,7 @@ correct cases
     My brother.
     <BLANKLINE>
 
-error cases
+the error cases
     >>> text_indentation()
     Traceback (most recent call last):
     TypeError: text_indentation() missing 1 required positional argument: 'text'

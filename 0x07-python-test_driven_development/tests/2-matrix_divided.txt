@@ -1,16 +1,16 @@
 # 2-matrix_divided.txt
 
 ==============================
-How to Use 2-matrix_divided.py
+How to use the 2-matrix_divided.py
 ==============================
 
-This module defines a matrix division function ``matrix_divided(matrix, div)``.
+This module define the matrix division function ``matrix_divided(matrix, div)``.
 
 Usage
 =====
 
-``matrix_divided(...)`` returns a new matrix that is a copy of the parameter
-``matrix`` with all elements divided by ``div``.
+``matrix_divided(...)`` return new matrix that is the copy of the parameter
+``matrix`` with all the elements divided by ``div``.
 
 ::
 
@@ -22,7 +22,7 @@ Usage
     >>> print(matrix_divided(matrix, 3))
     [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
 
-Note that quotients are rounded to a maximum of two decimal places.
+Note that the quotients are rounded to the maximum of two decimal places.
 
 ::
 
@@ -33,14 +33,14 @@ Note that quotients are rounded to a maximum of two decimal places.
     >>> print(matrix_divided(matrix, 3))
     [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
-The original matrix is left unchanged.
+The original matrix will be left unchanged.
 
 ::
 
     >>> print(matrix)
     [[1, 2, 3], [4, 5, 6]]
 
-The function can also handle floating-point numbers.
+The function can handle floating-point numbers.
 
 ::
 
@@ -51,7 +51,7 @@ The function can also handle floating-point numbers.
     >>> print(matrix_divided(matrix, 3))
     [[0.37, -0.73, 1.1], [1.47, 1.83, -2.2]]
 
-Integers and floats can be combined.
+The integers and floats can be combined.
 
 ::
 
@@ -65,7 +65,7 @@ Integers and floats can be combined.
 Invalid Matrices
 ==============
 
-The parameter ``matrix`` must be a list of lists consisting of either ints or
+A parameter ``matrix`` must be a list of lists that consists of either ints or
 floats. If ``matrix`` is not a list, a TypeError is raised.
 
 ::
@@ -82,7 +82,7 @@ floats. If ``matrix`` is not a list, a TypeError is raised.
     Traceback (most recent call last):
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
-Note that an empty list will raise the TypeError.
+Note that the empty list will raise the TypeError.
 
 ::
 
@@ -91,7 +91,7 @@ Note that an empty list will raise the TypeError.
     Traceback (most recent call last):
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
-But an empty list of lists will succeed.
+But the empty list of lists will succeed.
 
 ::
 
@@ -99,7 +99,7 @@ But an empty list of lists will succeed.
     >>> print(matrix_divided(matrix, 3))
     [[]]
 
-An identical TypeError is raised if ``matrix`` is not specifically a list of
+The identical TypeError is raised if the ``matrix`` is not specifically a list of
 lists.
 
 ::
@@ -109,7 +109,7 @@ lists.
     Traceback (most recent call last):
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
-The same TypeError is raised yet again if any elements in ``matrix`` are
+The same TypeError is raised again if elements in ``matrix`` are
 neither ints nor floats.
 
 ::
@@ -123,7 +123,7 @@ neither ints nor floats.
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 
-Finally, all the rows in ``matrix`` must be the same size. If any rows are
+Lastly, all the rows in the ``matrix`` must be the same size. If some rows are
 of different sizes, a new TypeError is raised.
 
 ::
@@ -139,7 +139,7 @@ of different sizes, a new TypeError is raised.
 Invalid Divisors
 ================
 
-The parameter ``div`` must be either an int or float. Otherwise, a TypeError
+A parameter ``div`` must be either an int or float. Otherwise, a TypeError
 is raised.
 
 ::
