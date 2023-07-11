@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    7-rectangle: class Rectangle from BaseGeomerty
+    7-rectangle: the class of Rectangle from BaseGeomerty
 """
 
 
@@ -9,16 +9,16 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 class Rectangle(BaseGeometry):
     """
-        Rectangle inherits from BaseGeometry
+        Rectangle will inherits from the BaseGeometry
         Attributes:
-            width (int): width of rectangle.
-            height (int): height of rectangle.
+            width (int): width of the rectangle.
+            height (int): height of the rectangle.
         Methods:
-            __init__ - initialises the Rectangle.
+            __init__ - initializes Rectangle.
     """
     def __init__(self, width, height):
         """
-            initialises Rectangle.
+            initializes the Rectangle.
         """
         self.integer_validator("width", width)
         self.integer_validator("height", height)
@@ -28,14 +28,14 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         """
-            Returns the area of a rectangle
+            Return area of the rectangle
         """
         area = self.__width * self.__height
         return area
 
     def __str__(self):
         """
-            retruns a string of rectangle details
+            returns the string of the rectangle details
         """
         return ("[{}] {}/{}".format(type(self).__name__,
                                     self.__width, self.__height))
