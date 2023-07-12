@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" The My Class module
+""" The My class module
 """
 
 class MyClass:
-    """ The My Class
+    """ The My class
     """
 
     def __init__(self, name):
